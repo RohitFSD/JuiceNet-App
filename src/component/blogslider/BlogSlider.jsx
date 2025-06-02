@@ -49,7 +49,7 @@ const blogData = [
     title: "Trends in EV Charging 2025",
     desc: "Latest trends and tech innovations in EV space...",
     image: BlogImage1,
-  }
+  },
 ];
 
 const BlogSlider = () => {
@@ -82,7 +82,10 @@ const BlogSlider = () => {
   return (
     <div className="blog-slider-container">
       <div className="blog-align-div">
-        <div className="blog-heading"><span className="blog-heading-text">Checkout Our Blogs</span> <button className="blog-btn">VIEW ALL</button></div>
+        <div className="blog-heading">
+          <span className="blog-heading-text">Checkout Our Blogs</span>{" "}
+          <button className="blog-btn">VIEW ALL</button>
+        </div>
         <div className="blog-slider" ref={scrollRef}>
           {blogData.map((item, index) => (
             <div className="blog-card" key={index}>
@@ -90,7 +93,7 @@ const BlogSlider = () => {
               <div className="blog-content">
                 <div className="blog-title-div">{item.title}</div>
                 <p>{item.desc}</p>
-                <a href="javascript:void(0)">READ BLOG →</a>
+                <div>READ BLOG →</div>
               </div>
             </div>
           ))}
