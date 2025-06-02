@@ -90,7 +90,7 @@ const BlogSlider = () => {
               <div className="blog-content">
                 <div className="blog-title-div">{item.title}</div>
                 <p>{item.desc}</p>
-                <a href="#">READ BLOG →</a>
+                <a href="javascript:void(0)">READ BLOG →</a>
               </div>
             </div>
           ))}

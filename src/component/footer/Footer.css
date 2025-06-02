@@ -236,8 +236,6 @@ input:focus {
     height: auto;
     width: -webkit-fill-available;
   }
-  .footer-main-lower-lower {
-  }
   .footer-main-lower-upper-div {
     flex-direction: column;
     align-items: center;
