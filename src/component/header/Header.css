@@ -1,0 +1,157 @@
+.container {
+  width: auto;
+  height: 5.5rem;
+  display: flex;
+  padding: 0 5rem;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 3.5rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-items {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.875rem;
+  position: relative;
+  cursor: pointer;
+}
+.nav-items:hover {
+  font-weight: 600;
+}
+.nav-items::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-items:hover::after {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.nav-user-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: white;
+  height: 2.875rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #01ba77;
+  color: #01ba77;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #01ba77;
+  color: white;
+}
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #01ba77;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-visible {
+  display: none;
+}
+
+/* Tablet + Mobile view (<=1023px) */
+@media screen and (max-width: 1024px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  .nav-section {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav-section.active {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-visible {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Mobile only (≤767px) tweak spacing if needed */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .btn {
+    padding: 0.75rem 1rem;
+  }
+}

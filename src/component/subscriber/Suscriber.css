@@ -1,0 +1,189 @@
+.subscriber-container {
+  background-color: #f9fafb;
+}
+
+.subscriber-main {
+  margin: 3.75rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.subscriber-upper {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  max-width: 80%;
+  margin: auto;
+}
+
+.subscriber-lower {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.subscriber-card {
+  width: 30%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscriber-card-inner {
+  margin: 1rem 0;
+  background: linear-gradient(#f9fafb, #f9fafb) padding-box,
+    linear-gradient(335.82deg, #02120c 0.64%, #01ba77 100.69%) border-box;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  width: 90%;
+}
+/* .subscriber-card:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
+.subscriber-card-inner:hover {
+  background: linear-gradient(335.38deg, #063323 -16.02%, #01ba77 100.68%);
+  color: white;
+}
+.subscriber-card-inner:hover .subs-btn {
+  background-color: white;
+  color: #01ba77;
+}
+.subscriber-card-inner:hover .subbadge {
+  filter: brightness(0) invert(1);
+}
+.subscriber-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscriber-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscriber-price-head {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.dollar-price {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.month {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.subs-heading-collector {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.subs-btn-div {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.subs-btn {
+  width: 100%;
+  height: 3rem;
+  padding: 18px 20px;
+  border-radius: 8px;
+  background-color: #01ba77;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.subs-heading-collector1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #6b7280;
+}
+.subscriber-card-inner:hover .subs-heading-collector1 {
+  color: white;
+}
+
+.subs-heading-collector2,
+.subs-heading-collector3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.subbadge {
+  height: 1.125rem;
+  width: 1.125rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.align-div-sub {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-brdr {
+  height: 1px;
+  background-color: #d1d5db;
+  margin: 1.5rem 0;
+}
+.subscriber-card .subscriber-card-inner:nth-child(1):hover {
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+/* Responsive adjustments */
+.subscriber-card:hover {
+  transform: scaleY(1.02);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .subscriber-main {
+    margin: 2rem;
+  }
+
+  .subscriber-upper {
+    font-size: 24px;
+  }
+
+  .subscriber-lower {
+    flex-direction: column;
+  }
+
+  .subscriber-card {
+    width: 100%;
+  }
+
+  .subscriber-card-inner {
+    margin: 1rem 0;
+  }
+  .dollar-price {
+    font-size: 30px;
+  }
+  .month {
+    font-size: 20px;
+  }
+}

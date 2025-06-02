@@ -1,0 +1,103 @@
+.juicenetapp-main {
+  display: flex;
+  margin: 3.75rem 3rem;
+  justify-content: space-between;
+}
+.juicenetapp-left {
+  width: 50%;
+}
+.juicenetapp-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 46%;
+}
+.juiceappphone {
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+}
+.juicenetapp-span1 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.juicenetapp-span2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: middle;
+  width: 100%;
+}
+.juicenetapp-span3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+.juicenetapp-inner-span {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: middle;
+  gap: 0.5rem;
+}
+.juicenetapp-span4 {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  cursor: pointer;
+}
+.badgrt {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+@media (max-width: 1024px) {
+  .juicenetapp-main {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+    gap: 2rem;
+  }
+
+  .juicenetapp-left,
+  .juicenetapp-right {
+    width: 100%;
+  }
+
+  .juiceappphone {
+    width: 100%;
+    height: auto;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin: auto;
+    display: flex;
+  }
+
+  .juicenetapp-span1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .juicenetapp-span2,
+  .juicenetapp-inner-span {
+    font-size: 14px;
+    text-align: center;
+  }
+  .juicenetapp-span3 {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .juicenetapp-span4 {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

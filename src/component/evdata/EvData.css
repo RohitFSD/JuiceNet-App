@@ -1,0 +1,112 @@
+.evdata-container {
+  height: 19.5rem;
+}
+.evdata-main {
+  margin: 3.5rem 4rem;
+  display: flex;
+  height: 12rem;
+}
+.evdata-heading {
+  width: 60%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 120%;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+.evdata-para {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.evdata-para-upper {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  vertical-align: middle;
+  width: 100%;
+  height: 50%;
+}
+.evdata-para-lower {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  gap: 1rem;
+}
+.evdata-span {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.evdata-percent {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.evdata-percent-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+  .evdata-container {
+    height: auto;
+  }
+  .evdata-main {
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .evdata-heading {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .evdata-para {
+    width: auto;
+    gap: 1rem;
+  }
+
+  .evdata-span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .evdata-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .evdata-para-upper {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .evdata-para-lower {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .evdata-span {
+    align-items: center;
+    text-align: center;
+  }
+
+  .evdata-percent {
+    font-size: 2.5rem;
+  }
+
+  .evdata-precent-text {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,153 @@
+.juicenet-container {
+  background-color: #f9fafb;
+  text-align: center;
+  width: 100%;
+}
+
+.juicenet-heading {
+  color: #0f172a;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+
+.juicenet-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.juicecanterimg {
+  width: 46.25rem;
+  height: 33.5rem;
+  mix-blend-mode: multiply;
+}
+
+.juicenetalign {
+  position: relative;
+  margin: 3.75rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  align-items: center;
+}
+
+.juicenet-card-com,
+.juicenet-card-com1,
+.juicenet-card-com2,
+.juicenet-card-com3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 17.31rem;
+  height: 12.06rem;
+  gap: 18px;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.juicenet-card-com {
+  top: 0;
+  left: 8.68rem;
+}
+
+.juicenet-card-com1 {
+  top: 0;
+  right: 8.68rem;
+}
+
+.juicenet-card-com2 {
+  top: 16rem;
+  left: 2.5rem;
+}
+
+.juicenet-card-com3 {
+  top: 16rem;
+  right: 2.5rem;
+}
+
+.com-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.com-text-span1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.com-text-span2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+}
+
+.juicenet-card-com-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 1400px) {
+  .juicenet-card-com {
+    top: 0;
+    left: 0;
+  }
+
+  .juicenet-card-com1 {
+    top: 0;
+    right: 0;
+  }
+
+  .juicenet-card-com2 {
+    top: 16rem;
+    left: 0;
+  }
+
+  .juicenet-card-com3 {
+    top: 16rem;
+    right: 0;
+  }
+}
+/* ------------ Responsive Styles ------------ */
+@media (max-width: 1024px) {
+  .juicecanterimg {
+    display: none;
+  }
+
+  .juicenetalign {
+    margin: 2rem 1rem;
+    height: auto;
+  }
+
+  .juicenet-card-com,
+  .juicenet-card-com1,
+  .juicenet-card-com2,
+  .juicenet-card-com3 {
+    position: static;
+    width: 100%;
+    max-width: 18rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .juicenet-grid {
+    display: none;
+  }
+
+  .juicenetalign {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    row-gap: 2rem;
+  }
+
+  .juicenet-heading {
+    font-size: 24px;
+  }
+}
